@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ESTHER不二 — Terminal × Canvas</title>
+<title>郑明 (小明) — Terminal × Canvas</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Fira+Code:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
@@ -160,7 +160,7 @@ body {
 .term-prompt { color: #4ade80; }
 .term-cmd { color: #e2e8f0; }
 .term-output { color: #2B7FD8; }
-.term-gold { color: #F4D758; font-weight: 700; font-size: 14px; }
+.term-gold { color: #E2F0D9; font-weight: 700; font-size: 14px; } /* Changed to Zheng Ming Green */
 .term-dim { color: rgba(255,255,255,0.4); }
 
 .cursor {
@@ -470,7 +470,7 @@ body {
 .workflow-col-line {
   width: 40px;
   height: 3px;
-  background: #F4D758;
+  background: #E2F0D9; /* Changed to Zheng Ming Green */
   border-radius: 2px;
   margin-bottom: 28px;
 }
@@ -600,7 +600,7 @@ body {
   font-family: 'Caveat', cursive;
   font-size: 52px;
   font-weight: 700;
-  color: #F4D758;
+  color: #FFDAE9; /* Changed to Zheng Ming Pink */
   line-height: 1.1;
 }
 
@@ -759,10 +759,8 @@ body {
 </head>
 <body>
 
-<!-- Transition Overlay -->
 <div class="transition-overlay" id="transitionOverlay"></div>
 
-<!-- ====== SECTION 1: TERMINAL HERO ====== -->
 <section class="hero-section" id="heroSection">
   <div class="macbook-wrapper" id="macbookWrapper">
     <div class="macbook-screen-bezel" id="macbookBezel">
@@ -773,13 +771,12 @@ body {
             <span class="terminal-dot red"></span>
             <span class="terminal-dot yellow"></span>
             <span class="terminal-dot green"></span>
-            <span class="terminal-title">esther@universe ~ zsh</span>
+            <span class="terminal-title">zhengming@universe ~ zsh</span>
           </div>
           <div id="terminalLines"></div>
         </div>
 
-        <!-- Scale-through handled via terminal class -->
-      </div>
+        </div>
     </div>
     <div class="macbook-hinge"></div>
     <div class="macbook-base"></div>
@@ -792,100 +789,95 @@ body {
   </div>
 </section>
 
-<!-- ====== SECTION 2: WHITEBOARD / CANVAS ====== -->
 <section class="canvas-section" id="canvasSection">
   <div class="canvas-esc-hint" id="canvasEscHint">按 ESC 退出白板 · Press ESC to exit</div>
   <button class="canvas-close-btn" id="canvasCloseBtn" title="Exit canvas">✕</button>
   <div class="canvas-wrapper">
-    <iframe src="A-infinite-canvas-v2.html" title="ESTHER's Canvas" style="width:100%;height:100%;border:none;display:block;"></iframe>
+    <iframe src="A-infinite-canvas-v2.html" title="Zheng Ming's Canvas" style="width:100%;height:100%;border:none;display:block;"></iframe>
   </div>
 </section>
 
-<!-- ====== SECTION 3: EXIT ZOOM-OUT ====== -->
 <section class="exit-section" id="exitSection">
   <div class="exit-sticky" id="exitSticky">
 
-    <!-- Workflow showcase that shrinks into MacBook -->
     <div class="exit-canvas-content" id="exitCanvasContent">
       <div class="workflow-screen">
-        <h1 class="workflow-headline">1 Person + AI = 1 Team</h1>
-        <p class="workflow-subtitle">ESTHER不二 · INTJ · 南大建筑 → 米兰理工 → AI · ColaOS</p>
+        <h1 class="workflow-headline">文学底蕴 + 跨界实践 = 无限可能</h1>
+        <p class="workflow-subtitle">郑明 (小明) · ENFP · 兰大文学院 → 中国国家地理 → AI漫剧</p>
         <div class="workflow-columns">
           <div class="workflow-col">
-            <div class="workflow-col-title">RESEARCH & THINK</div>
+            <div class="workflow-col-title">ECOLOGY & OBSERVE</div>
             <div class="workflow-col-line"></div>
             <div class="workflow-item">
-              <span class="workflow-item-label">Daily Brief</span>
-              <span class="workflow-item-desc">AI定时跑增长晨报、行业简报，每天自动推送</span>
+              <span class="workflow-item-label">观鸟记录</span>
+              <span class="workflow-item-desc">深入野外生态，已累计记录 370+ 种飞羽精灵</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">竞品分析</span>
-              <span class="workflow-item-desc">AI辅助调研竞品动态、功能拆解、策略推演</span>
+              <span class="workflow-item-label">绿队策划</span>
+              <span class="workflow-item-desc">策划跨界联络项目，覆盖高校 1000+ 人次</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">GTM 框架</span>
-              <span class="workflow-item-desc">从用户画像到增长飞轮，AI搭框架人做决策</span>
+              <span class="workflow-item-label">视觉统筹</span>
+              <span class="workflow-item-desc">主导文学院融媒体中心设计排版，构建学院美学</span>
             </div>
           </div>
           <div class="workflow-col">
-            <div class="workflow-col-title">CREATE & BUILD</div>
+            <div class="workflow-col-title">CONTENT & CREATE</div>
             <div class="workflow-col-line"></div>
             <div class="workflow-item">
-              <span class="workflow-item-label">内容创作</span>
-              <span class="workflow-item-desc">口播脚本、小红书图文、一鱼多吃Skill自动分发</span>
+              <span class="workflow-item-label">内容运营</span>
+              <span class="workflow-item-desc">参与中国国家地理出境游方向高质感内容输出</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">视觉生成</span>
-              <span class="workflow-item-desc">品牌物料、知识可视化、AI配图一键出稿</span>
+              <span class="workflow-item-label">生态摄影</span>
+              <span class="workflow-item-desc">主理@木石溯源，打造独特的日系粉绿调生态影像</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">工具开发</span>
-              <span class="workflow-item-desc">NORUSH公众号编辑器、拼贴诗生成器、自定义Skill</span>
+              <span class="workflow-item-label">AI 漫剧</span>
+              <span class="workflow-item-desc">熟练使用 Gemini, Manus 构建人物一致性与分镜脚本</span>
             </div>
           </div>
           <div class="workflow-col">
-            <div class="workflow-col-title">ANALYZE & OPERATE</div>
+            <div class="workflow-col-title">DESIGN & BRAND</div>
             <div class="workflow-col-line"></div>
             <div class="workflow-item">
-              <span class="workflow-item-label">项目管理</span>
-              <span class="workflow-item-desc">飞书多维表格 + AI Skill，自动化流程追踪</span>
+              <span class="workflow-item-label">品牌重塑</span>
+              <span class="workflow-item-desc">完成个人品牌升级，强化文学涵养与生态标签</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">SOP 搭建</span>
-              <span class="workflow-item-desc">直播SOP、内容SOP、运营SOP，标准化复用</span>
+              <span class="workflow-item-label">文创设计</span>
+              <span class="workflow-item-desc">独立设计文创周边，创造量产 500+ 件全数售罄战绩</span>
             </div>
             <div class="workflow-item">
-              <span class="workflow-item-label">数据驱动</span>
-              <span class="workflow-item-desc">增长简报、转化漏斗、用户行为分析辅助决策</span>
+              <span class="workflow-item-label">持续探索</span>
+              <span class="workflow-item-desc">在手工编织、摄影与新媒体之间，探索自我表达的边界</span>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- MacBook that grows from edges -->
     <div class="exit-macbook-wrapper" id="exitMacbook" style="opacity: 0;">
       <div class="exit-bezel exit-frame-piece" id="exitBezel">
         <div class="exit-notch exit-frame-piece"></div>
         <div class="exit-screen" id="exitScreen">
-          <!-- Goodbye content -->
           <div class="goodbye-screen" id="goodbyeScreen">
             <div class="goodbye-titlebar">
               <span class="terminal-dot red"></span>
               <span class="terminal-dot yellow"></span>
               <span class="terminal-dot green"></span>
-              <span class="goodbye-title-text">esther@universe ~ %</span>
+              <span class="goodbye-title-text">zhengming@universe ~ %</span>
             </div>
             <div class="goodbye-body">
               <div class="goodbye-heading">Say Hi</div>
-              <div class="goodbye-sub">I don't bite — my AI might though.</div>
+              <div class="goodbye-sub">不给自己设限，让生命力自由流动。</div>
               <div class="goodbye-links">
-                <span>📮 <a href="mailto:esther.sjw@gmail.com">esther.sjw@gmail.com</a></span>
-                <span>📕 小红书 <a href="#">@ESTHER不二</a></span>
+                <span>📮 <a href="mailto:zhengm2023519@163.com">zhengm2023519@163.com</a></span>
+                <span>📕 小红书 <a href="#">@木石溯源</a></span>
               </div>
-              <div class="goodbye-quote">"找到你喜欢的事，然后让它杀死你。"<br>— Charles Bukowski</div>
+              <div class="goodbye-quote">"当你在凝视飞鸟的时候，自然也在凝视你。"<br>— 郑明</div>
             </div>
-            <div class="goodbye-footer">© 2026 ESTHER不二 · Built with AI &amp; attitude</div>
+            <div class="goodbye-footer">© 2026 郑明 (Xiao Ming) · Built with Passion</div>
           </div>
         </div>
       </div>
@@ -895,7 +887,6 @@ body {
     </div>
   </div>
 
-  <!-- Back to top -->
   <div class="back-to-top" id="backToTop">
     <a href="#" id="backToTopLink">
       <span class="back-arrow">↑</span>
@@ -904,7 +895,6 @@ body {
   </div>
 </section>
 
-<!-- Loop overlay for smooth scroll-to-top transition -->
 <div class="loop-overlay" id="loopOverlay"></div>
 
 <script>
@@ -919,17 +909,17 @@ body {
   // ===== TERMINAL TYPING =====
   const terminalData = [
     { type: 'cmd', prompt: '$ ', text: 'whoami' },
-    { type: 'output', prefix: '> ', text: 'ESTHER不二' },
+    { type: 'output', prefix: '> ', text: '郑明 (小明)' },
     { type: 'blank' },
     { type: 'cmd', prompt: '$ ', text: 'cat about.md' },
-    { type: 'output', prefix: '> ', text: '在AI时代认真生活的女生' },
-    { type: 'output', prefix: '  ', text: 'INTJ / 跟Agent搭档的第1年' },
-    { type: 'output', prefix: '  ', text: '南大/米理建筑 → AI ColaOS building' },
+    { type: 'output', prefix: '> ', text: '兰州大学文学院学生，在文学与山野间流动的生命力' },
+    { type: 'output', prefix: '  ', text: 'ENFP / 资深观鸟爱好者 (370+鸟种)' },
+    { type: 'output', prefix: '  ', text: '中国国家地理实习生 → AI 漫剧创作者' },
     { type: 'blank' },
-    { type: 'cmd', prompt: '$ ', text: 'echo "1 person + AI = 1 team"' },
-    { type: 'gold', prefix: '> ', text: '1 person + AI = 1 team' },
+    { type: 'cmd', prompt: '$ ', text: 'echo "不给自己设限，让生命力自由流动"' },
+    { type: 'gold', prefix: '> ', text: '不给自己设限，让生命力自由流动' },
     { type: 'blank' },
-    { type: 'cmd', prompt: '$ ', text: 'open esther-canvas.app', cursor: true },
+    { type: 'cmd', prompt: '$ ', text: 'open zhengming-canvas.app', cursor: true },
   ];
 
   const container = document.getElementById('terminalLines');
@@ -1340,7 +1330,7 @@ body {
       });
       var titleText = document.createElement('span');
       titleText.style.cssText = 'color:rgba(255,255,255,0.35);font-size:11px;margin-left:auto;margin-right:auto;font-family:Inter,sans-serif;';
-      titleText.textContent = 'esther@universe ~ zsh';
+      titleText.textContent = 'zhengming@universe ~ zsh';
       titlebar.appendChild(titleText);
       termArea.appendChild(titlebar);
 
@@ -1371,7 +1361,7 @@ body {
           div.innerHTML = '<span style="color:#2B7FD8">' + item.prefix + item.text + '</span>';
           lineDelay += 150;
         } else if (item.type === 'gold') {
-          div.innerHTML = '<span style="color:#F4D758;font-weight:700;font-size:13px">' + item.prefix + item.text + '</span>';
+          div.innerHTML = '<span style="color:#E2F0D9;font-weight:700;font-size:13px">' + item.prefix + item.text + '</span>';
           lineDelay += 150;
         }
 
